@@ -1,0 +1,100 @@
+* {
+  list-style: none;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #0d1282;
+  width: 100%;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  font-size: 24px;
+  color: #eeeded;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+a {
+  color: #eeeded;
+  text-decoration: none;
+  gap: 20px;
+}
+
+li {
+  padding: 2rem;
+}
+
+h1 {
+  color: #0d1282;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+
+h2 {
+  color: #0d1282;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+body {
+  background-color: #eeeded;
+}
+
+.promos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.promos-2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.monte {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+h3 {
+  color: #0d1282;
+  font-size: 30px;
+  padding: 20px;
+}
+
+aside {
+  color: #0d1282;
+  font-size: 22px;
+  padding: 20px;
+}
+
+.sobre {
+  padding: 40px;
+  color: #0d1282;
+  display: flex;
+  font-size: 22px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.redes {
+  color: #0d1282;
+  font-size: 24px;
+  display: block;
+}
