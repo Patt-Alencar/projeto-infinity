@@ -1,3 +1,14 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap');
+
+
+:root{
+--cor-principal: #0d1282;
+--cor-secundaria: #eeeded;
+--fonte-principal: "Montserrat", sans-serif;
+
+}
+
 * {
   list-style: none;
   overflow-x: hidden;
@@ -7,7 +18,7 @@
 }
 
 header {
-  background-color: #0d1282;
+  background-color: var(--cor-principal);
   width: 100%;
   padding: 20px;
 }
@@ -15,16 +26,16 @@ header {
 .flex {
   display: flex;
   font-size: 24px;
-  color: #eeeded;
+  color: var(--cor-secundaria);
   flex-direction: row;
   justify-content: center;
   gap: 15px;
-  width: 100%;
+  width: auto;
   align-items: flex-start;
 }
 
 a {
-  color: #eeeded;
+  color: var(--cor-secundaria);
   text-decoration: none;
   gap: 20px;
 }
@@ -34,67 +45,94 @@ li {
 }
 
 h1 {
-  color: #0d1282;
+  color: var(--cor-principal);
   text-align: center;
   font-size: 40px;
   padding: 20px;
 }
 
 h2 {
-  color: #0d1282;
+  color: var(--cor-principal);
   text-align: center;
   font-size: 30px;
   padding: 10px;
 }
 
 body {
-  background-color: #eeeded;
+  background-color: var(--cor-secundaria);
 }
 
 .promos {
   display: flex;
-  justify-content: center;
+  justify-content:center;
   gap: 10px;
+  margin-left: 30px;
 }
 
-.promos-2 {
+/* .promos-2 {
   display: flex;
-  justify-content: center;
+  justify-content:right;
   gap: 40px;
-}
+} */
 
 .monte {
   display: flex;
   justify-content: center;
   padding: 30px;
+  margin-left: 30px;
 }
 
 h3 {
-  color: #0d1282;
+  color: var(--cor-secundaria);
   font-size: 30px;
   padding: 20px;
+  font-family: var(--fonte-principal);
 }
 
-aside {
-  color: #0d1282;
+.newsletter {
+  color: var(--cor-secundaria);
   font-size: 22px;
   padding: 20px;
+  margin-left: 10px;
+  font-size: 22px;
 }
 
-.sobre {
-  padding: 40px;
-  color: #0d1282;
+.rodape {
+  background-color: var(--cor-principal);
+  padding: 2%;
+  color: var(--cor-secundaria);
   display: flex;
-  font-size: 22px;
   flex-direction: row;
   justify-content: center;
   gap: 15px;
-  width: 100%;
-  align-items: flex-start;
-}
+  /* width: 100%; */
+  text-align: center;
+ }
 
 .redes {
-  color: #0d1282;
+  color: var(--cor-secundaria);
   font-size: 24px;
   display: block;
+}
+
+@media (max-width: 1200px){
+  .cabecalho{
+    width: 100%;
+  }
+  .cabecalho__nav{
+    justify-content: center;
+  }
+
+  /* .flex{
+    width: 100%;
+  } */
+
+  .corpo-principal{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .promos{
+    width: 100%;
+  }
 }
